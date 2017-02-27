@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript inlämning</title>
+</head>
+
+<body>
+  <p>Skriv in ett tal mellan 1 och 10 <b id='boldstuff'></b> </p>
+        <input type='button' onClick='changeText()' value='Tryck här'/>
+        
+        <script type="text/javascript">
+		function changeText(){
+			var minText=prompt ("Skriv ditt tal:");
+			document.getElementById('boldstuff').innerHTML = minText;
+			var i = minText;
+		if(i>=0 ||  i<0)
+		{
+			alert("Noice");
+			
+			}
+		else
+		{
+			alert("Fel");
+			var minText=prompt ("Försök igen");
+			document.getElementById('boldstuff').innerHTML = minText;
+			}
+			
+		}
+		</script>
+</body>
+</html>
