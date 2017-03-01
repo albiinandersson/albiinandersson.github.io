@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript inlämning</title>
+</head>
+
+<body>
+  <p>Skriv in valfritt tal <b id='boldstuff'></b> </p>
+        <input type='button' onClick='changeText()' value='Tryck här'/>
+        
+        <script type="text/javascript">
+		function changeText(){
+			var minText=prompt ("Skriv ditt tal:");
+			var i = minText;
+		if(i>=0 ||  i<0)
+		{
+			alert("Noice");
+			document.getElementById('boldstuff').innerHTML = minText;
+			
+			}
+		else
+		{
+			alert("Fel");
+			changeText();
+			}
+			
+		}
+		</script>
+</body>
+</html>
